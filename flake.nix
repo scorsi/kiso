@@ -37,8 +37,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Neovim and its config (the `kanna` feature).
-    kanna = {
+    # Neovim and its config (the `kanna` feature). The owner's own flakes are prefixed `scorsi-`
+    # among the inputs, to tell them apart from external ones at a glance.
+    scorsi-kanna = {
       url = "github:scorsi/kanna";
       inputs.nixpkgs.follows = "nixpkgs";
     };

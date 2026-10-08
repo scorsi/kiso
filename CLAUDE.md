@@ -10,4 +10,4 @@ Guidance for Claude Code in this repo. See [README.md](README.md) for what it is
   modules come from `kisoInputs` (kiso's own inputs), not from the consumer's `inputs`.
 - **Comments: English, why not what.** User-facing runtime strings stay in French.
 - **Checks**: `nix fmt`, `nix flake check` (builds `example.nix`'s darwin host on macOS). A change
-  meant for a consumer is tested there with `--override-input kiso path:…` before pushing.
+  meant for a consumer is tested there with `--override-input scorsi-kiso path:…` before pushing.
