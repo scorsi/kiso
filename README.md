@@ -8,12 +8,15 @@ values and the hosts.
 
 ## Using it
 
+Input names don't matter to kiso; the example uses its owner's convention (`scorsi-` for their own
+flakes, to tell them apart from external ones).
+
 ```nix
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-26.05-darwin";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    kiso = {
+    scorsi-kiso = {
       url = "github:scorsi/kiso";
       inputs.nixpkgs.follows = "nixpkgs"; # and any other input you share with it
     };
@@ -23,7 +26,7 @@ values and the hosts.
     inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
-        inputs.kiso.flakeModules.default
+        inputs.scorsi-kiso.flakeModules.default
         ./modules # your own features, values and hosts
       ];
     };
@@ -64,10 +67,10 @@ Flake plumbing: supported systems, the `darwinConfigurations` option, `nix fmt`,
 From a consuming flake, without pushing:
 
 ```bash
-nix run .#switch -- --override-input kiso path:$HOME/repositories/kiso
+nix run .#switch -- --override-input scorsi-kiso path:$HOME/repositories/kiso
 ```
 
-Then push kiso, `nix flake update kiso` in the consumer, switch, commit its `flake.lock`. Here:
+Then push kiso, `nix flake update scorsi-kiso` in the consumer, switch, commit its `flake.lock`. Here:
 `nix fmt`, `nix flake check`.
 
 ## Rules

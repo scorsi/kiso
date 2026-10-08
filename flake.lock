@@ -94,26 +94,6 @@
         "type": "github"
       }
     },
-    "kanna": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1791475674,
-        "narHash": "sha256-Tqi0zowzMDIGZ5QmMkKpaSRwgR+uAYOE1ZQzWIvbYcs=",
-        "owner": "scorsi",
-        "repo": "kanna",
-        "rev": "a280a67aae4389f72956f70527de22b8ab7c6934",
-        "type": "github"
-      },
-      "original": {
-        "owner": "scorsi",
-        "repo": "kanna",
-        "type": "github"
-      }
-    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -175,11 +155,31 @@
         "flake-parts": "flake-parts",
         "home-manager": "home-manager",
         "import-tree": "import-tree",
-        "kanna": "kanna",
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs",
+        "scorsi-kanna": "scorsi-kanna",
         "sops-nix": "sops-nix"
+      }
+    },
+    "scorsi-kanna": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791475674,
+        "narHash": "sha256-Tqi0zowzMDIGZ5QmMkKpaSRwgR+uAYOE1ZQzWIvbYcs=",
+        "owner": "scorsi",
+        "repo": "kanna",
+        "rev": "a280a67aae4389f72956f70527de22b8ab7c6934",
+        "type": "github"
+      },
+      "original": {
+        "owner": "scorsi",
+        "repo": "kanna",
+        "type": "github"
       }
     },
     "sops-nix": {

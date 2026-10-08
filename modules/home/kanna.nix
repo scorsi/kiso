@@ -11,7 +11,7 @@ let
 in
 {
   flake.modules.homeManager.kanna = {
-    imports = [ kisoInputs.kanna.homeModules.default ];
+    imports = [ kisoInputs.scorsi-kanna.homeModules.default ];
   };
 
   flake.modules.homeManager.kanna-dev =
