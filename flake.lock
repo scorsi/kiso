@@ -169,11 +169,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791475674,
-        "narHash": "sha256-Tqi0zowzMDIGZ5QmMkKpaSRwgR+uAYOE1ZQzWIvbYcs=",
+        "lastModified": 1791747691,
+        "narHash": "sha256-QL6avOOQaT1jCv96qJPmQu8mKvTID++Unx2aNubWcqQ=",
         "owner": "scorsi",
         "repo": "kanna",
-        "rev": "a280a67aae4389f72956f70527de22b8ab7c6934",
+        "rev": "8eea6b73d85e8657ea4cd3a538ea63c324e5b99e",
         "type": "github"
       },
       "original": {
